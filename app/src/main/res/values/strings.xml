@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Land</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiZWxtZWhkaS1tYXBieCIsImEiOiJja2lxYjhvYXUwMDcyMnJuNGRmc2Q2bXV5In0.akf_uqN921L2QwUe5sJ5Ww</string>
+    <string name="successfully_msg">Land saved Successfully</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

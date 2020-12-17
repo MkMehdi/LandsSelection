@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_host"
+    android:label="Land"
+    app:startDestination="@id/landsFragment">
+
+    <fragment
+        android:id="@+id/JMapFragment"
+        android:name="com.sample.lands.mapbox.ui.jmap.JMapFragment"
+        android:label="Map"
+        tools:layout="@layout/j_map_fragment" />
+
+    <fragment
+        android:id="@+id/landsFragment"
+        android:name="com.sample.lands.mapbox.ui.lands.LandListFragment"
+        android:label="Lands"
+        tools:layout="@layout/land_list_fragment">
+        <action
+            android:id="@+id/action_landsFragment_to_JMapFragment"
+            app:destination="@id/JMapFragment">
+            <argument
+                android:name="land"
+                app:argType="com.sample.cameraid.mapbox.db.model.Land" />
+        </action>
+    </fragment>
+</navigation>
