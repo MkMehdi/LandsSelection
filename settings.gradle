@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "CameraID"
+rootProject.name = "lands"

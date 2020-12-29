@@ -23,7 +23,7 @@
             app:destination="@id/JMapFragment">
             <argument
                 android:name="land"
-                app:argType="com.sample.cameraid.mapbox.db.model.Land" />
+                app:argType="com.sample.lands.mapbox.db.model.Land" />
         </action>
     </fragment>
 </navigation>
